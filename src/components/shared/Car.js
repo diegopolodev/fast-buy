@@ -10,9 +10,7 @@ const Car = (props) => {
     <div
       className={`lg:col-span-2 fixed top-0 bg-[#1F1D2B] w-full lg:w-96 lg:right-0 h-full transition-all z-50 ${
         showOrder ? "right-0" : "-right-full"
-      }`}
-    
-    >
+      }`}>
           {/*Orders*/}
           <div className="relative pt-16 lg:pt-8 text-gray-300 p-8 h-full ">
             <RiCloseLine 
@@ -34,13 +32,12 @@ const Car = (props) => {
               </div>
               {/* Products */}
               <div className="h-[400px] md:h[700px] lg-[50px] overflow-scroll">
-
                 {/* Product */}
                 <div className="bg-[#262837] p-4 rounded-xl mb-4">
                   <div className="grid grid-cols-6 mb-4">
                     {/* Product description */}
                     <div className="col-span-4 flex items-center gap-3">
-                      <img src="comida.png" className="w-10 h-10 object-cover" />
+                      <img src="dish1.png" className="w-10 h-10 object-cover" />
                       <div>
                         <h5 className="text-sm">Spaicy seaso...</h5>
                         <p className="text-xs text-gray-500">$2.29</p>
@@ -77,7 +74,7 @@ const Car = (props) => {
                   <div className="grid grid-cols-6 mb-4">
                     {/* Product description */}
                     <div className="col-span-4 flex items-center gap-3">
-                      <img src="comida.png" className="w-10 h-10 object-cover" />
+                      <img src="dish2.png" className="w-10 h-10 object-cover" />
                       <div>
                         <h5 className="text-sm">Spaicy seaso...</h5>
                         <p className="text-xs text-gray-500">$2.29</p>
@@ -108,14 +105,49 @@ const Car = (props) => {
                     </div>
                   </div>
                 </div>
-
+                {/* Product */}
+                <div className="bg-[#262837] p-4 rounded-xl mb-4">
+                  <div className="grid grid-cols-6 mb-4">
+                    {/* Product description */}
+                    <div className="col-span-4 flex items-center gap-3">
+                      <img src="dish3.png" className="w-10 h-10 object-cover" />
+                      <div>
+                        <h5 className="text-sm">Spaicy seaso...</h5>
+                        <p className="text-xs text-gray-500">$2.29</p>
+                      </div>
+                    </div>
+                    {/* Qty */}
+                    <div>
+                      <span>2</span>
+                    </div>
+                    {/* Price */}
+                    <div>
+                      <span>$4.58</span>
+                    </div>
+                  </div>
+                  {/* Note */}
+                  <div className="grid grid-cols-6 items-center">
+                    <form className="col-span-5">
+                      <input
+                        type="text"
+                        className="bg-[#1F1D2B] py-2 px-4 rounded-lg outline-none"
+                        placeholder="Order note..."
+                      />
+                    </form>
+                    <div>
+                      <button className="border border-red-500 p-2 rounded-lg">
+                        <RiDeleteBin6Line className="text-red-500" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
 
                 {/* Product */}
                 <div className="bg-[#262837] p-4 rounded-xl mb-4">
                   <div className="grid grid-cols-6 mb-4">
                     {/* Product description */}
                     <div className="col-span-4 flex items-center gap-3">
-                      <img src="comida.png" className="w-10 h-10 object-cover" />
+                      <img src="dish1.png" className="w-10 h-10 object-cover" />
                       <div>
                         <h5 className="text-sm">Spaicy seaso...</h5>
                         <p className="text-xs text-gray-500">$2.29</p>
@@ -146,44 +178,6 @@ const Car = (props) => {
                     </div>
                   </div>
                 </div>
-
-                {/* Product */}
-                <div className="bg-[#262837] p-4 rounded-xl mb-4">
-                  <div className="grid grid-cols-6 mb-4">
-                    {/* Product description */}
-                    <div className="col-span-4 flex items-center gap-3">
-                      <img src="comida.png" className="w-10 h-10 object-cover" />
-                      <div>
-                        <h5 className="text-sm">Spaicy seaso...</h5>
-                        <p className="text-xs text-gray-500">$2.29</p>
-                      </div>
-                    </div>
-                    {/* Qty */}
-                    <div>
-                      <span>2</span>
-                    </div>
-                    {/* Price */}
-                    <div>
-                      <span>$4.58</span>
-                    </div>
-                  </div>
-                  {/* Note */}
-                  <div className="grid grid-cols-6 items-center">
-                    <form className="col-span-5">
-                      <input
-                        type="text"
-                        className="bg-[#1F1D2B] py-2 px-4 rounded-lg outline-none"
-                        placeholder="Order note..."
-                      />
-                    </form>
-                    <div>
-                      <button className="border border-red-500 p-2 rounded-lg">
-                        <RiDeleteBin6Line className="text-red-500" />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
               </div>
             {/* Submit payment */}
         <div className="bg-[#262837] absolute w-full bottom-0 left-0 p-4">
@@ -201,16 +195,9 @@ const Car = (props) => {
             </button>
           </div>
         </div>
-
-           </div>
-
-          
-            
-      
-          </div>
-          
-
-        </div>
+      </div>
+    </div>
+  </div>
   )
 }
 

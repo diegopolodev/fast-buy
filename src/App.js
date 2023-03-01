@@ -14,12 +14,12 @@ import {
   import Sidebar from './components/shared/Sidebar';
   import Car from "./components/shared/Car";
   import Header from "./components/shared/Header";
-  import Card from "./components/shared/Card";
+  import Menu from "./components/shared/Menu";
   
 function App() {
   const [showMenu, setShowMenu] = useState(false);
   const [showOrder, setShowOrder] = useState(false);
-
+  
   const toggleMenu = () => {
     setShowMenu(!showMenu);
     setShowOrder(false);
@@ -29,9 +29,6 @@ function App() {
     setShowOrder(!showOrder);
     setShowMenu(false);
   };
-
-  
-
 
   return (
     <div className="bg-[#262837] w-full min-h-screen">
@@ -64,82 +61,11 @@ function App() {
             </button>
           </div>
           {/* Content */}
-          <div className="p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
-            {/* Card */}
-            <Card
-              img="dish1.png"
-              description="Speacy seasoned seafood nodles"
-              price="4.29"
-              inventory="20"
-            />
-            {/* Card */}
-            <Card
-              img="dish2.png"
-              description="Speacy seasoned seafood nodles"
-              price="2.29"
-              inventory="20"
-            />
-            {/* Card */}
-            <Card
-              img="dish3.png"
-              description="Speacy seasoned seafood nodles"
-              price="2.29"
-              inventory="20"
-            />
-            {/* Card */}
-            <Card
-              img="dish1.png"
-              description="Speacy seasoned seafood nodles"
-              price="2.29"
-              inventory="20"
-            />
-            {/* Card */}
-            <Card
-              img="dish2.png"
-              description="Speacy seasoned seafood nodles"
-              price="2.29"
-              inventory="20"
-            />
-            {/* Card */}
-            <Card
-              img="dish3.png"
-              description="Speacy seasoned seafood nodles"
-              price="2.29"
-              inventory="20"
-            />
-            {/* Card */}
-            <Card
-              img="dish1.png"
-              description="Speacy seasoned seafood nodles"
-              price="2.29"
-              inventory="20"
-            />
-            {/* Card */}
-            <Card
-              img="dish2.png"
-              description="Speacy seasoned seafood nodles"
-              price="2.29"
-              inventory="20"
-            />
-            {/* Card */}
-            <Card
-              img="dish3.png"
-              description="Speacy seasoned seafood nodles"
-              price="2.29"
-              inventory="20"
-            />
-            {/* Card */}
-            <Card
-              img="dish1.png"
-              description="Speacy seasoned seafood nodles"
-              price="2.29"
-              inventory="20"
-            />
-          </div>
+          <Menu className='bg-red-400'/>
         </div>
+        
       </main>
     </div>
   );
 }
-
 export default App;
