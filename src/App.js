@@ -63,7 +63,6 @@ function App() {
           {/* Content */}
           <Menu className='bg-red-400'/>
         </div>
-        
       </main>
     </div>
   );
